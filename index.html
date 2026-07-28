@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKATE - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero-header">
+    <div class="background-overlay"></div>
+
+    <h1>AKATE</h1>
+    <p class="subtitle">Digital Artist • Illustration • Animation</p>
+
+    <button id="menu-btn" aria-label="Menu">☰</button>
+
+    <nav id="menu">
+        <button class="menu-link" data-page="home">Accueil</button>
+        <button class="menu-link" data-page="gallery">Galerie</button>
+        <button class="menu-link" data-page="about">À propos</button>
+        <button class="menu-link" data-page="contact">Contact</button>
+    </nav>
+
+    <button id="theme-btn" aria-label="Changer le thème">🌙</button>
+</header>
+
+<main>
+    <!-- ACCUEIL -->
+    <section id="home" class="page active">
+        <h2>Bienvenue dans mon univers artistique</h2>
+        <p>
+            Je crée des illustrations numériques, des animations et du dessin traditionnel.
+            Je réalise également des dessins réalistes et j’aime explorer différents styles
+            pour donner vie à mes idées.
+        </p>
+    </section>
+
+    <!-- GALERIE -->
+    <section id="gallery" class="page">
+        <h2>Galerie</h2>
+
+        <!-- DESSIN TRADITIONNEL -->
+        <div class="gallery-section">
+            <h3>Dessin traditionnel</h3>
+            <div class="gallery">
+                <img src="images/traditionnel1.jpg" class="art small" alt="Dessin traditionnel 1">
+                <img src="images/traditionnel2.jpg" class="art big" alt="Dessin traditionnel 2">
+                <img src="images/traditionnel3.jpg" class="art vertical" alt="Dessin traditionnel 3">
+                <img src="images/traditionnel4.jpg" class="art horizontal" alt="Dessin traditionnel 4">
+                <img src="images/traditionnel5.jpg" class="art small" alt="Dessin traditionnel 5">
+                <img src="images/traditionnel6.jpg" class="art big" alt="Dessin traditionnel 6">
+                <img src="images/traditionnel7.jpg" class="art vertical" alt="Dessin traditionnel 7">
+                <img src="images/traditionnel8.jpg" class="art horizontal" alt="Dessin traditionnel 8">
+            </div>
+        </div>
+
+        <!-- DIGITAL -->
+        <div class="gallery-section">
+            <h3>Digital</h3>
+            <div class="gallery">
+                <img src="images/digital1.jpg" class="art big" alt="Illustration digitale 1">
+                <img src="images/digital2.jpg" class="art vertical" alt="Illustration digitale 2">
+                <img src="images/digital3.jpg" class="art small" alt="Illustration digitale 3">
+                <img src="images/digital4.jpg" class="art horizontal" alt="Illustration digitale 4">
+            </div>
+        </div>
+
+        <!-- ANIMATION -->
+        <div class="gallery-section">
+            <h3>Animation</h3>
+            <div class="gallery video-gallery">
+                <video class="art video" controls poster="images/video-poster.jpg">
+                    <source src="videos/animation1.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="about" class="page">
+        <h2>À propos</h2>
+        <p>
+            Je suis une artiste passionnée par la création.
+            Je fais de l’illustration, de l’animation, du dessin traditionnel,
+            du réalisme, mais aussi des activités manuelles comme le crochet
+            et différents projets créatifs.
+            <br><br>
+            J’aime expérimenter plusieurs domaines et créer des univers personnels.
+        </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="page">
+        <h2>Contact</h2>
+        <p>Pour suivre mes créations :</p>
+        <a class="instagram" 
+           href="https://www.instagram.com/akatessticrousty?igsh=aXBsNG13dHUwdDNp&utm_source=qr" 
+           target="_blank" 
+           rel="noopener">
+            Instagram : @akatessticrousty
+        </a>
+    </section>
+</main>
+
+<!-- VISIONNEUSE -->
+<div id="viewer">
+    <img id="viewer-img" alt="Aperçu">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
